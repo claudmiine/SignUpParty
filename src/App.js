@@ -1,4 +1,6 @@
 import './App.css';
+import Signup from'./Signup.js';
+import Home from'./Home.js';
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -40,7 +42,7 @@ export default function BasicExample() {
             <Home />
           </Route>
           <Route path="/signup">
-            <SignUp />
+            <Signup />
           </Route>
         </Switch>
         </header>
@@ -52,24 +54,29 @@ export default function BasicExample() {
 // You can think of these components as "pages"
 // in your app.
 
-function Home() {
-  return (
-    <div className='main-page'>
-      <h1>Sign up for a Cyber party!</h1>
-      <p>Here is where your journey starts.</p>
-      <p>Click the button, sign up and wait for the message from us.</p>
-      <Link to="/signup">
-    <button className="signupButton">Sign up</button>
-  </Link>
+// function Home() {
+//   return (
+//   //   <div className='main-page'>
+//   //     <h1>Sign up for a Cyber party!</h1>
+//   //     <p>Here is where your journey starts.</p>
+//   //     <p>Click the button, sign up and wait for the message from us.</p>
+//   //     <Link to="/signup">
+//   //   <button className="signupButton">Sign up</button>
+//   // </Link>
 
-    </div>
-  );
-}
+//   //   </div>
+//   // );
+//   <div>
+//   <Home />
+//   </div>
+  
+//   )
 
-function SignUp() {
-  return (
-    <div>
-      <h2>Sign Up</h2>
-    </div>
-  );
-}
+// function Signup() {
+//   return (
+//     <div>
+//       <Signup />
+//     </div>
+//   );
+// }
+// }
