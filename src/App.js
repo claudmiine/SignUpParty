@@ -1,17 +1,75 @@
 import './App.css';
-import React from 'react'; 
-import { Form } from './Form'
-import MainPage from './MainPage';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink
+} from "react-router-dom";
 
-function App() {
+// This site has 3 pages, all of which are rendered
+// dynamically in the browser (not server rendered).
+//
+// Although the page does not ever refresh, notice how
+// React Router keeps the URL up to date as you navigate
+// through the site. This preserves the browser history,
+// making sure things like the back button and bookmarks
+// work properly.
+
+export default function BasicExample() {
   return (
-    <div className="App background">
+    <Router>
+      <div className="App background">
       <header className="App-header">
-        <MainPage/>
-        <Form />
-      </header>
+        {/* <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+        </ul> */}
+
+        {/*
+          A <Switch> looks through all its children <Route>
+          elements and renders the first one whose path
+          matches the current URL. Use a <Switch> any time
+          you have multiple routes, but you want only one
+          of them to render at a time
+        */}
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/signup">
+            <SignUp />
+          </Route>
+        </Switch>
+        </header>
+      </div>
+    </Router>
+  );
+}
+
+// You can think of these components as "pages"
+// in your app.
+
+function Home() {
+  return (
+    <div className='main-page'>
+      <h1>Sign up for a Cyber party!</h1>
+      <p>Here is where your journey starts.</p>
+      <p>Click the button, sign up and wait for the message from us.</p>
+      <Link to="/signup">
+    <button className="signupButton">Sign up</button>
+  </Link>
+
     </div>
   );
 }
 
-export default App;
+function SignUp() {
+  return (
+    <div>
+      <h2>Sign Up</h2>
+    </div>
+  );
+}
