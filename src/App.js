@@ -1,13 +1,11 @@
 import './App.css';
-import Signup from'./Signup.js';
-import Home from'./Home.js';
+import Signup from './Signup.js';
+import Home from './Home.js';
 import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link,
-  NavLink
+  Route
 } from "react-router-dom";
 
 // This site has 3 pages, all of which are rendered
@@ -22,31 +20,14 @@ import {
 export default function BasicExample() {
   return (
     <Router>
-      <div className="App background">
-      <header className="App-header">
-        {/* <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-        </ul> */}
-
-        {/*
-          A <Switch> looks through all its children <Route>
-          elements and renders the first one whose path
-          matches the current URL. Use a <Switch> any time
-          you have multiple routes, but you want only one
-          of them to render at a time
-        */}
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/signup">
-            <Signup />
-          </Route>
-        </Switch>
-        </header>
-      </div>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/signup">
+          <Signup />
+        </Route>
+      </Switch>
     </Router>
   );
 }

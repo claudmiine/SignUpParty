@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 .background {
   background-image: url("./images/background2.png");
   background-size: cover;
@@ -19,12 +15,15 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+ 
 
+}
 .App-header h1 {
-margin-bottom: 100px;
+ margin: 0 auto;
+    padding: 0;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    float: left;
+    margin-top: 0px;
+ 
 }
-.App-link {
-  color: #61dafb;
-}
-
