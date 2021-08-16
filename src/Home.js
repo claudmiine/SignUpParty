@@ -1,5 +1,6 @@
 import './Home.css';
 import React from "react";
+import Button from '@material-ui/core/Button';
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,14 +11,17 @@ import {
 
 export default function Home() {
   return (
+    <header className="App-header">
+          <h1>Sign up for a Cyber party!</h1>
+   
     <div className='main-page'>
-      <h1>Sign up for a Cyber party!</h1>
-      <p>Here is where your journey starts.</p>
-      <p>Click the button, sign up and wait for the message from us.</p>
-      <Link to="/signup">
-    <button className="signupButton">Sign up</button>
-  </Link>
-
+        <p>Here is where your journey starts.</p>
+        <p>Click the button, sign up and wait for the message from us.</p>
+        <Link to="/signup">
+          <Button variant="contained">Sign Up now!</Button>
+        </Link>
     </div>
+     </header>
+    
   );
 }

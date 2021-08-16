@@ -23,7 +23,7 @@ export default function BasicExample() {
   return (
     <Router>
       <div className="App background">
-      <header className="App-header">
+      {/* <header className="App-header"> */}
         {/* <ul>
           <li>
             <Link to="/">Home</Link>
@@ -45,38 +45,8 @@ export default function BasicExample() {
             <Signup />
           </Route>
         </Switch>
-        </header>
+        {/* </header> */}
       </div>
     </Router>
   );
 }
-
-// You can think of these components as "pages"
-// in your app.
-
-// function Home() {
-//   return (
-//   //   <div className='main-page'>
-//   //     <h1>Sign up for a Cyber party!</h1>
-//   //     <p>Here is where your journey starts.</p>
-//   //     <p>Click the button, sign up and wait for the message from us.</p>
-//   //     <Link to="/signup">
-//   //   <button className="signupButton">Sign up</button>
-//   // </Link>
-
-//   //   </div>
-//   // );
-//   <div>
-//   <Home />
-//   </div>
-  
-//   )
-
-// function Signup() {
-//   return (
-//     <div>
-//       <Signup />
-//     </div>
-//   );
-// }
-// }
