@@ -12,7 +12,7 @@ import {
 export default function Signup() {
   return (
     <div className='signup-page'>
-      <h1>YES!</h1>
+      <h1>When you ready submit the form and wait for the message from us!</h1>
 
     </div>
   );

@@ -11,7 +11,7 @@ import {
 
 export default function Home() {
   return (
-    <header className="App-header">
+    <div>
           <h1>Sign up for a Cyber party!</h1>
    
     <div className='main-page'>
@@ -21,7 +21,8 @@ export default function Home() {
           <Button variant="contained">Sign Up now!</Button>
         </Link>
     </div>
-     </header>
+    </div>
+     
     
   );
 }

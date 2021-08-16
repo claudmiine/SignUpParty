@@ -23,7 +23,7 @@ export default function BasicExample() {
   return (
     <Router>
       <div className="App background">
-      {/* <header className="App-header"> */}
+      <header className="App-header">
         {/* <ul>
           <li>
             <Link to="/">Home</Link>
@@ -45,7 +45,7 @@ export default function BasicExample() {
             <Signup />
           </Route>
         </Switch>
-        {/* </header> */}
+        </header>
       </div>
     </Router>
   );
