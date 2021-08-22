@@ -1,4 +1,4 @@
-import './Signup.css';
+import styles from './Signup.css';
 import React from "react";
 import TextField from '@material-ui/core/TextField';
 import ReactDOM from 'react-dom';
@@ -20,9 +20,12 @@ export default function Signup() {
             <TextField id="standard-basic" label="Standard" />
             <TextField id="filled-basic" label="Filled" variant="filled" />
             <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+            <TextField id="standard-basic" label="Standard" />
+            <TextField id="filled-basic" label="Filled" variant="filled" />
+            <TextField id="outlined-basic" label="Outlined" variant="outlined" />
           </form>
         </div>
       </header>
     </div>
-  );
+      );
 }

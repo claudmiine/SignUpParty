@@ -3,7 +3,7 @@
 }
 
 .background {
-  background-image: url("./images/background2.png");
+  background-image: url("./images/background-image.png");
   background-size: cover;
 }
 
@@ -15,9 +15,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
- 
-
 }
+
 .App-header h1 {
  margin: 0 auto;
     padding: 0;
